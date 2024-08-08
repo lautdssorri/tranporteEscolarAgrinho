@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    
+    <link rel="stylesheet" href="style.css">
+    <title>MobileFirst 05</title>
+</head>
+<body> 
+     <!--Versão Mobile-->       
+    <section class="versaoMobile">       
+        <nav class="navegacaoMobile">
+                <span class="user">
+                    <img src="img/user.png" alt="">
+                </span>
+                <span>
+                    <h3>Laura</h3>
+                    <p>Colégio Ary João Dresch</p>
+                </span>
+                
+                <!--Início do mecanismo de checkbox da sideBar-->
+                <input type="checkbox" id="sideBarAtiva">
+                <label for="sideBarAtiva" class="open-sidebar-button">
+                    <img src="img/list_40dp_FILL0_wght400_GRAD0_opsz40.svg" alt="">
+                </label>
+                <!--Camada que possibilita o fechamento da sideBar tocando na tela sem necessárimente clicar no botão X de saida da sideBar-->
+                <label id="overlay" for="sideBarAtiva"></label>               
+                
+                <div class="links-container">
+                    <label for="sideBarAtiva" class="close-sidebar-button">
+                        <img src="img/close_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                    </label>
+                    <a class="home-link ativo" href="#"><span class="material-symbols-outlined">
+                        home
+                        </span>Início</a>
+                    <a href="./sobre.html"><span class="material-symbols-outlined">
+                        description
+                        </span>Sobre</a>   
+                    <a href="#"><span class="material-symbols-outlined">
+                        notifications
+                        </span>Avisos</a>
+                    <a href="#"><span class="material-symbols-outlined">
+                        person
+                        </span>Usuário</a>
+                </div>
+        </nav>            
+        <!--heroSection-->    
+        <div class="heroSectionMobile">
+            <div class="titulo">
+                <h1>Transporte
+                    <p>Escolar</p>
+                </h1>
+                <div class="menuTitulo">
+                    <p>Escolha uma das opções</p>
+                </div>                
+            </div>
+            <div class="figura">
+                <img src="img/amico.png" alt="">
+            </div>
+        </div>
+        <!--Menu Mobile-->
+        <div class="menuMobile">
+            <div class="mensagem">
+                <img src="img/mensagens.png" alt="">
+                <span class="active">Mensagem</span>
+            </div>
+            <div class="motorista">
+                <img src="img/motorista.png" alt="">
+                <span>Motorista</span>
+            </div>
+            <div class="rotas">
+                <img src="img/rotas.png" alt="">
+                <span>Rotas</span>
+            </div>
+            <div class="escola">
+                <img src="img/escola.png" alt="">
+                <span>Escola</span>
+            </div>            
+        </div>
+        <!--Conteudo Mobile-->
+        <div class="conteudoMobile">
+            <div class="tituloConteudo">
+                <h1>Avisos e Recados</h1>
+                <small>Recentes</small>
+            </div> 
+            <div class="cards">
+                <ul class="recados">
+                    <li>
+                        <h3>Ônibus Quebrado!</h3>
+                            <p>
+                                Avisamos que nesta quinta-feira dia 12/04/2024
+                                o transporte escolar rural não estará passando
+                                devido ao fato do ônibus estar em manutenção sem
+                                previsão de retorno. Agradecemos a compreenção. Obrigado
+                            </p>
+                            <div class="barraIcones">
+                                <img src="./img/like.svg" alt="">
+                                <img src="./img/coracao.svg" alt="">                        
+                                <span>Secretaria do Transporte
+                                    <span>16/06/2024</span>
+                                </span>
+                            </div>
+                    </li>
+                    <li>
+                        <h3>Estrada Interditada</h3>
+                            <p>
+                                Devido as fortes chuvas dos ultimos dias,
+                                comunicamos que a rota dos alunos da 
+                                fazenda Brisanta está interditada e hoje o transporte
+                                escolar não atenderá está rota. Agradecemos a compreenção. Obrigado
+                            </p>
+                            <div class="barraIcones">
+                                <img src="./img/like.svg" alt="">
+                                <img src="./img/coracao.svg" alt="">                        
+                                <span>Secretaria do Transporte
+                                    <span>10/05/2024</span>
+                                </span>
+                            </div>
+                    </li>
+                    <li>
+                        <h3>Motorista Doente</h3>
+                            <p>
+                                Bom dia,aos alunos do pimentel hoje segunda-feira o ônibus não vai passar pois o motorista está gripado e ele voltara as atividades normal apenas na quarta-feira. Agradecemos a compreenção.Obrigado                        
+                            </p>
+                            <div class="barraIcones">
+                                <img src="./img/like.svg" alt="">
+                                <img src="./img/coracao.svg" alt="">                        
+                                <span>Secretaria do Transporte
+                                    <span>09/04/2024</span>
+                                </span>
+                            </div>
+                    </li>                    
+                    <li>
+                        <h3>Estrada Interditada</h3>
+                            <p>
+                                Aviso, hoje não ira passar o ônibus pois a estrada esta asfaltando, retornaremos as atividades normal sexta-feira. Agradecemos a compreenção. Obrigado.
+                            </p>
+                            <div class="barraIcones">
+                                <img src="./img/like.svg" alt="">
+                                <img src="./img/coracao.svg" alt="">                        
+                                <span>Secretaria do Transporte
+                                    <span>16/03/2024</span>
+                                </span>
+                            </div>
+                    </li>
+                    <li>
+                        <h3>Reunião da Secretaria de Educação</h3>
+                            <p>
+                                Atenção, dia 06/09 e 07/09 os motoristas estaram em reunião entao eles não iram passar nesse dia. Agradecemos a compreenção. Obrigado.
+                            </p>
+                            <div class="barraIcones">
+                                <img src="./img/like.svg" alt="">
+                                <img src="./img/coracao.svg" alt="">                        
+                                <span>Secretaria do Transporte
+                                    <span>02/03/2024</span>
+                                </span>
+                            </div>
+                    </li>                    
+                    <li>
+                        <h3>Feriado</h3>
+                            <p>
+                                Bom Dia, amanhã dia 21/08 será feriado e o ônibus não vai passar mais retornaremos as atividades na quinta-feira normalmente. Agradecemos a compreenção. Obrigado.
+                            </p>
+                            <div class="barraIcones">
+                                <img src="./img/like.svg" alt="">
+                                <img src="./img/coracao.svg" alt="">                        
+                                <span>Secretaria do Transporte
+                                    <span>19/02/2024</span>
+                                </span>
+                            </div>
+                    </li>                    
+                </ul>
+            </div>           
+            
+            
+            <div class="dispositivos">
+                <h1>Dispositivos</h1>
+                <small>Acesse do seu dispositivo favorito</small>
+                <img src="./img/celular.png" alt="">
+                <p>Celular</p>
+                <img src="./img/computador.png" alt="">
+                <p>Computador</p>
+                <img src="./img/tablet.png" alt="">
+                <p>Tablet</p>
+            </div>
+            <div class="funcoes">
+                <h1>Funções disponíveis</h1>
+                <small>Tudo sobre o transporte escolar</small>
+                <ul>
+                    <li>
+                        <img src="./img/mensagem.png" alt="">
+                        <p>Essa funcionalidade é dedicada as mesnagens que os alunos iram receber da secretaria de educação sobre o transporte e quais são os motoristas e os ônibus disponíveis de cada rota,e sobre avisos de ônibus quebrado,dias de chuvas e etc.</p>
+                    </li>
+                    <li>
+                        <img src="./img/motorista2.png" alt="">
+                        <p>Essa funcionalidade é para o motorista se comunicar com os alunos sobre o horário,atrasos,imprevistos e etc.</p>
+                    </li>
+                    <li>
+                        <img src="./img/mapa.png" alt="">
+                        <p>Aqui será as rotas e pontos para os alunos saberem o lugar mais próximo do seu sítio e acaba facilitando para os alunos e motorista.</p>
+                    </li>
+                    <li>
+                        <img src="./img/escola2.png" alt="">
+                        <p>Essa funcionalidade será para os alunos e a escola se comunicar,quando o ônibus não passar em dias de chuvas,imprevistos,ônibus quebrado e outras coisas,a escola já ira saber quem são os alunos e o motivo para justificar a falta e assim os alunos não seram prejudicados.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer">
+                <div class="contato">
+                    <h2 class="contatoTitulo">Alguma dúvida?</h2>
+                    <p class="contatoTexto">Entre em contato conosco e tire suas dúvidas</p>
+                </div>
+                <input class="contatoEmail" type="email" placeholder="Envie suas dúvidas aqui">
+                <div class="botaoEnviar">
+                    <p>Enviar</p>
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
+
+    <!--Versão Desktop-->
+    <section class="versaoDesktop">
+        <nav class="navegacaoDesktop">
+            <div class="user">
+                <img src="img/user.png" class="usuario" alt="usuario"> 
+                <div class="informacoes">
+                    <small>Aluna:</small>
+                    <p>Laura</p>
+                </div>                
+            </div>
+                    <ul class="navLinks">
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Motorista</a></li>
+                        <li><a href="#">Rotas</a></li>
+                        <li><a href="#">Escola</a></li>
+                    </ul>
+            <div>
+                <a class="contato"  href="./sobre.html">Sobre</a>
+            </div>                                
+        </nav>    
+    <!--Conteudo Desktop-->
+        <div class="heroSectionDesktop">
+            <div class="descricaoHeroSection">
+                <small>Colégio Ary João Dresch</small>
+                <h2>Transporte Escolar</h2>
+                <h1>TUDO EM UM ÚNICO LUGAR</h1>
+                <p>Avisos, entre em contato com seu motorista, conheça suas rotas,<br>e veja o calendário escolar para o transporte rural. Todas as informações <br> de seu transporte escolar você encontra aqui.</p>
+                <a href="./sobre.html"><button>Saiba Mais</button></a>
+            </div>
+            <div class="imagemHeroSection">
+                <img src="img/bus.jpg" alt="">
+            </div>
+        </div>    
+    <!--Mensagens Recentes-->
+        <div class="mensagensDesktop">
+            <ul>
+                <li>
+                    <div class="mensagem">
+                        <h3>Ônibus Quebrado!</h3>
+                        <p>
+                            Avisamos que nesta quinta-feira dia 12/04/2024
+                            o transporte escolar rural não estará passando
+                            devido ao fato do ônibus estar em manutenção sem
+                            previsão de retorno. Agradecemos a compreenção. Obrigado
+                        </p>
+                        <div class="barraIconesDesktop">
+                            <div class="botoes">
+                            <img src="./img/like.svg" alt="">
+                            <img src="./img/coracao.svg" alt="">                        
+                            </div>
+                            <div>
+                            <span>Secretaria do Transporte
+                                <span>16/06/2024</span>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="mensagem">
+                        <h3>Estrada Interditada</h3>
+                        <p>
+                            Devido as fortes chuvas dos ultimos dias,
+                        comunicamos que a rota dos alunos da 
+                        fazenda Brisanta está interditada e hoje o transporte
+                        escolar não atenderá está rota. Agradecemos a compreenção. Obrigado
+                        </p>
+                        <div class="barraIconesDesktop">
+                            <div class="botoes">
+                            <img src="./img/like.svg" alt="">
+                            <img src="./img/coracao.svg" alt="">                        
+                            </div>
+                            <div>
+                            <span>Secretaria do Transporte
+                                <span>18/05/2024</span>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="mensagem">
+                        <h3>Motorista Doente</h3>
+                        <p>
+                            Bom dia,aos alunos do pimentel hoje segunda-feira o ônibus não vai passar pois o motorista está gripado e ele voltara as atividades normal apenas na quarta-feira. Agradecemos a compreenção.Obrigado
+                        </p>
+                        <div class="barraIconesDesktop">
+                            <div class="botoes">
+                            <img src="./img/like.svg" alt="">
+                            <img src="./img/coracao.svg" alt="">                        
+                            </div>
+                            <div>
+                            <span>Secretaria do Transporte
+                                <span>23/04/2024</span>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="mensagem">
+                        <h3>Estrada Interditada</h3>
+                        <p>
+                            Aviso, hoje não ira passar o ônibus pois a estrada esta asfaltando, retornaremos as atividades normal sexta-feira. Agradecemos a compreenção. Obrigado.
+                        </p>
+                        <div class="barraIconesDesktop">
+                            <div class="botoes">
+                            <img src="./img/like.svg" alt="">
+                            <img src="./img/coracao.svg" alt="">                        
+                            </div>
+                            <div>
+                            <span>Secretaria do Transporte
+                                <span>08/03/2024</span>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="mensagem">
+                        <h3>Reunião da Secretaria de Educação</h3>
+                        <p>
+                            Atenção, dia 06/09 e 07/09 os motoristas estaram em reunião entao eles não iram passar nesse dia. Agradecemos a compreenção. Obrigado.
+                        </p>
+                        <div class="barraIconesDesktop">
+                            <div class="botoes">
+                            <img src="./img/like.svg" alt="">
+                            <img src="./img/coracao.svg" alt="">                        
+                            </div>
+                            <div>
+                            <span>Secretaria do Transporte
+                                <span>02/03/2024</span>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="mensagem">
+                        <h3>Feriado</h3>
+                        <p>
+                            Bom Dia, amanhã dia 21/08 será feriado e o ônibus não vai passar mais retornaremos as atividades na quinta-feira normalmente. Agradecemos a compreenção. Obrigado.
+                        </p>
+                        <div class="barraIconesDesktop">
+                            <div class="botoes">
+                            <img src="./img/like.svg" alt="">
+                            <img src="./img/coracao.svg" alt="">                        
+                            </div>
+                            <div>
+                            <span>Secretaria do Transporte
+                                <span>19/02/2024</span>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="tituloDispositivo">
+                <h1>Acesse em seu dispositivo favorito</h1>
+            </div>                
+            <div class="dispositivos">                
+                <div class="celular">
+                    <img src="./img/celular.png" alt="">
+                    <p>Celular</p>
+                </div>
+                <div class="computador">
+                    <img src="./img/computador.png" alt="">
+                    <p>Computador</p>
+                </div>
+                <div class="tablet">
+                    <img src="./img/tablet.png" alt="">
+                    <p>Tablet</p>
+                </div>
+            </div> 
+            <div class="recuros">
+                <ul>
+                    <li>
+                        <img src="./img/mensagens.png" alt="">
+                        <p>Essa funcionalidade é dedicada as mesnagens que os alunos iram receber da secretaria de educação sobre o transporte e quais são os motoristas e os ônibus disponíveis de cada rota,e sobre avisos de ônibus quebrado,dias de chuvas e etc.</p>
+                    </li>
+                    <li>
+                        <img src="./img/motorista.png" alt="">
+                        <p>Essa funcionalidade é para o motorista se comunicar com os alunos sobre o horário,atrasos,imprevistos e etc.</p>
+                    </li>
+                    <li>
+                        <img src="./img/rotas.png" alt="">
+                        <p>Aqui será as rotas e pontos para os alunos saberem o lugar mais próximo do seu sítio e acaba facilitando para os alunos e motorista.</p>
+                    </li>
+                    <li>
+                        <img src="./img/escola.png" alt="">
+                        <p>Essa funcionalidade será para os alunos e a escola se comunicar,quando o ônibus não passar em dias de chuvas,imprevistos,ônibus quebrado e outras coisas,a escola já ira saber quem são os alunos e o motivo para justificar a falta e assim os alunos não seram prejudicados.</p>
+                    </li>
+                </ul>
+             </div>           
+        </div>
+        
+        
+    <!--FooterDesktop-->
+        <div class="footerDesktop">
+            <div class="contatoDesktop">
+                <ul>
+                  <li><img src="./img/local.png" alt="">Colégio Estadual<br>Ary João Dresch<br>Nova Londrina-PR</li>
+                </li>  
+                  <li><img src="./img/fone.png" alt="">(44) 3423-1020</li>
+                  <li><img src="./img/email.png" alt="">colary@hotmail.com</li>
+                </ul>
+            </div>
+            <div class="sobreFooter">
+                <h1>Sobre este projeto</h1>
+                <p>Projeto transporte que veio para inovar! Projeto Agrinho 2024.</p>
+                    <div class="barraIconesFooter">
+                        <ul>
+                            <li><a href="https://www.instagram.com/laura_sorrilha13?igsh=MWFzYWx3YTN4dW03bQ=="><img src="./img/instagram.png" alt=""></a></li>
+                            <li><a href="https://www.linkedin.com/in/laura-dos-santos-sorrilha-85152730b/"><img src="./img/linkedin.png" alt=""></a></li>
+                            <li><a href="https://github.com/lautdssorri"><img src="./img/github.png" alt=""></a></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </section>
+    </body>
+</body>
+</html>

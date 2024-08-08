@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    
+    <link rel="stylesheet" href="style.css">
+    <title>MobileFirst 05</title>
+</head>
+<body> 
+     <!--Versão Mobile-->       
+    <section class="versaoMobile">       
+        <nav class="navegacaoMobile">
+                <span class="user">
+                    <img src="./img/user.png" alt="">
+                </span>
+                <span>
+                    <h3>Laura</h3>
+                    <p>Colégio Ary João Dresch</p>
+                </span>
+                
+                <!--Início do mecanismo de checkbox da sideBar-->
+                <input type="checkbox" id="sideBarAtiva">
+                <label for="sideBarAtiva" class="open-sidebar-button">
+                    <img src="img/list_40dp_FILL0_wght400_GRAD0_opsz40.svg" alt="">
+                </label>
+                <!--Camada que possibilita o fechamento da sideBar tocando na tela sem necessárimente clicar no botão X de saida da sideBar-->
+                <label id="overlay" for="sideBarAtiva"></label>               
+                
+                <div class="links-container">
+                    <label for="sideBarAtiva" class="close-sidebar-button">
+                        <img src="img/close_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                    </label>
+                    <a class="home-link" href="./index.html"><span class="material-symbols-outlined">
+                        home
+                        </span>Início</a>
+                    <a href="#" class="ativo"><span class="material-symbols-outlined">
+                        description
+                        </span>Sobre</a>   
+                    <a href="#"><span class="material-symbols-outlined">
+                        notifications
+                        </span>Avisos</a>
+                    <a href="#"><span class="material-symbols-outlined">
+                        person
+                        </span>Usuário</a>
+                </div>
+        </nav>            
+        <!--heroSection-->    
+        <div class="heroSectionMobile">
+            <div class="titulo">
+                <h1>Transporte
+                    <p>Escolar</p>
+                </h1>
+                <div class="menuTitulo">
+                    <p>Escolha uma das opções</p>
+                </div>                
+            </div>
+            <div class="figura">
+                <img src="img/amico.png" alt="">
+            </div>
+        </div>
+        <!--Menu Mobile-->
+        <div class="menuMobile">
+            <div class="mensagem">
+                <a href="/index.html"><img src="img/mensagens.png" alt=""></a>
+                <span><a href="/index.html">Mensagem</a></span>
+            </div>
+            <div class="motorista">
+                <img src="img/motorista.png" alt="">
+                <span>Motorista</span>
+            </div>
+            <div class="rotas">
+                <img src="img/rotas.png" alt="">
+                <span>Rotas</span>
+            </div>
+            <div class="escola">
+                <img src="img/escola.png" alt="">
+                <span>Escola</span>
+            </div>            
+        </div>
+        <!--Conteudo Mobile-->
+        <div class="sobreMobile">
+            <div class="tituloConteudo">
+                <h1>Sobre o Projeto</h1>
+                <small>Conheça mais</small>
+            </div> 
+            
+            <div class="sobre">
+                <h1>Quem sou eu?</h1>
+                <p>Me chamo Laura Dos Santos Sorrilha,sou uma menina que não conhecia o mundo da tecnologia e quando conheci me encantei, tenho princípios e sou muito faladora, gosto de experiência novas e de desafios.</p>
+                <h1>Objetivo</h1>
+                <p>Que todos vejam meu projeto e que seja algo que gere interesse nas pessoas,esse projeto desenvolvi para ajudar o motorista, alunos e pais  e para a secretaria de educação, para um problema antigo uma nova solução.</p>
+                <h1>Passos Futuros</h1>
+                <p>O futuro já é essa nova tecnologia que está sendo implementada para trazer melhorias, meu site é uma nova forma de ver que ele vai ajudar e melhorar o trabalho de muitas pessoas com um só click</p>
+                <h1>Como surgiu o Projeto Tranporte Escola</h1>
+                <p>O projeto surgiu através de uma conversa com dois colegas da escola, estavamos falando sobre a dificuldade que eles tem com o trasporte e com a comunicação na escola, pensei que poderia transformar esse problema em uma solução, chamei o professor e já fomos conversar com a secretaria da escola para ver como funciona essa questão da turma do sítio e logo percebemos que poderiamos implementar essa ideia para um site que ajudaria a todos, foi dias pensando como implentar de uma maneira fácil e tentar entender como funcionava o transporte, falamos com a secretaria de educação que são os responsável pelos ônibus e foi assim que de um problema fizemos virar uma solução com a tecnologia.</p>
+            </div>
+                        
+            <div class="footer">
+                <div class="contato">
+                    <h2 class="contatoTitulo">Alguma dúvida?</h2>
+                    <p class="contatoTexto">Entre em contato conosco e tire suas dúvidas</p>
+                </div>
+                <input class="contatoEmail" type="email" placeholder="Envie suas dúvidas aqui">
+                <div class="botaoEnviar">
+                    <p>Enviar</p>
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
+
+    <!--Versão Desktop-->
+    <section class="versaoDesktop">
+        <nav class="navegacaoDesktop">
+            <div class="user">
+                <img src="img/user.png" class="usuario" alt="usuario"> 
+                <div class="informacoes">
+                    <small>Aluna:</small>
+                    <p>Laura</p>
+                </div>                
+            </div>
+                    <ul class="navLinks">
+                        <li><a href="./index.html">Início</a></li>
+                        <li><a href="#">Motorista</a></li>
+                        <li><a href="#">Rotas</a></li>
+                        <li><a href="#">Escola</a></li>
+                    </ul>
+            <div>
+                <a class="contato" href="#">Sobre</a>
+            </div>                                
+        </nav>    
+    <!--Conteudo Desktop-->
+        <div class="heroSectionDesktop">
+            <div class="descricaoHeroSection">
+                <small>Colégio Ary João Dresch</small>
+                <h2>Transporte Escolar</h2>
+                <h1>TUDO EM UM ÚNICO LUGAR</h1>
+                <p>Avisos, entre em contato com seu motorista, conheça suas rotas,<br>e veja o calendário escolar para o transporte rural. Todas as informações <br> de seu transporte escolar você encontra aqui.</p>
+                <a href="#"><button>Saiba Mais</button></a>
+            </div>
+            <div class="imagemHeroSection">
+                <img src="img/bus.jpg" alt="">
+            </div>
+        </div>    
+    <!--Mensagens Recentes-->
+        <div class="sobreDesktop">            
+            <div class="texto">
+                <h1>Quem sou eu?</h1>
+                <p>Me chamo Laura Dos Santos Sorrilha,sou uma menina que não conhecia o mundo da tecnologia e quando conheci me encantei, tenho princípios e sou muito faladora, gosto de experiência novas e de desafios.</p>
+                <img src="./img/perfil.png" alt="">
+            </div>
+            <div class="texto">
+                <h1>Objetivo</h1> 
+                <p>Que todos vejam meu projeto e que seja algo que gere interesse nas pessoas,esse projeto desenvolvi para ajudar o motorista, alunos e pais  e para a secretaria de educação, para um problema antigo uma nova solução.</p>               
+                <img src="./img/objetivo.png" alt="">
+            </div>                                
+            <div class="texto">
+                <h1>Passos Futuros</h1> 
+                <p>O futuro já é essa nova tecnologia que está sendo implementada para trazer melhorias, meu site é uma nova forma de ver que ele vai ajudar e melhorar o trabalho de muitas pessoas com um só click.</p>               
+                <img src="./img/passos.png" alt="">
+            </div>                                
+    </div>        
+        <div class="projeto">
+            <h1>Como surgiu o Projeto Tranporte Escola</h1>
+            <p>O projeto surgiu através de uma conversa com dois colegas da escola, estavamos falando sobre a dificuldade que eles tem com o trasporte e com a comunicação na escola, pensei que poderia transformar esse problema em uma solução, chamei o professor e já fomos conversar com a secretaria da escola para ver como funciona essa questão da turma do sítio e logo percebemos que poderiamos implementar essa ideia para um site que ajudaria a todos, foi dias pensando como implentar de uma maneira fácil e tentar entender como funcionava o transporte, falamos com a secretaria de educação que são os responsável pelos ônibus e foi assim que de um problema fizemos virar uma solução com a tecnologia.</p>
+        </div>
+    
+    <!--FooterDesktop-->
+        <div class="footerDesktop">
+            <div class="contatoDesktop">
+                <ul>
+                  <li><img src="img/local.png" alt="">Colégio Estadual<br>Ary João Dresch<br>Nova Londrina-PR</li>
+                </li>  
+                  <li><img src="img/fone.png" alt="">(44) 3423-1020</li>
+                  <li><img src="img/email.png" alt="">colary@hotmail.com</li>
+                </ul>
+            </div>
+            <div class="sobreFooter">
+                <h1>Sobre este projeto</h1>
+                <p>Projeto transporte que veio para inovar! Projeto Agrinho 2024.</p>
+                    <div class="barraIconesFooter">
+                        <ul>
+                            <li><a href="https://www.instagram.com/laura_sorrilha13?igsh=MWFzYWx3YTN4dW03bQ=="><img src="img/instagram.png" alt=""></a></li>
+                            <li><a href="https://www.linkedin.com/in/laura-dos-santos-sorrilha-85152730b/"><img src="img/linkedin.png" alt=""></a></li>
+                            <li><a href="https://github.com/lautdssorri"><img src="img/github.png" alt=""></a></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </section>
+    </body>
+</body>
+</html>
